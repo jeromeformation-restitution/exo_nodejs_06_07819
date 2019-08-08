@@ -1,13 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-router.put('/produit', (req,res) =>
+router.get('/', (req,res) =>
     {
-        res.json('Le produit a été modifié');
+        res.render('tchat.pug');
     }
 );
-
-
-
 
 module.exports = router;
